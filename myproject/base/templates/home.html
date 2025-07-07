@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+{% block content %}
+<div style="padding: 20px;">
+    <h2>Welcome to Skyline Public School 🎓</h2>
+    <p style="font-size: 16px; color: #333;">
+        This is a simple Student Management System built with Django. You can register new students, view their details, update records, or softly delete them.
+    </p>
+
+    <div style="margin-top: 20px;">
+        <a href="{% url 'register' %}">
+            <button>Register a New Student</button>
+        </a>
+        <a href="{% url 'student_list' %}">
+            <button>View All Students</button>
+        </a>
+    </div>
+</div>
+{% endblock %}

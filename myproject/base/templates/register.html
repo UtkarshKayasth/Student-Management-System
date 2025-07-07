@@ -1,0 +1,20 @@
+{% extends 'main.html' %}
+{% block content %}
+<h2>Register a New Student</h2>
+<form method="POST">
+    {% csrf_token %}
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>Age:</label><br>
+    <input type="number" name="age" required><br><br>
+
+    <label>Course:</label><br>
+    <input type="text" name="course" required><br><br>
+
+    <button type="submit">Register</button>
+</form>
+{% endblock %}
